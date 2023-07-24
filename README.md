@@ -37,4 +37,4 @@ This server will provide the services below (will be updating it as i move forwa
 - HDD 
 - Ethernet Cable 
 
-![Cat](images/things_you_need.jpg)
+![Cat](images/things_you_need.png)
