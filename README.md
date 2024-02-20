@@ -102,10 +102,10 @@ After installing portainer and logging in . We need to change some settings. We 
 
 - Click on the *Home* on the side bar
 - Click on the environment that has been created 
-- On the dropdown that opens on the sidebar you click on the *App templates* there you can see a list of applications that can be installed on the server
+- In the dropdown that opens on the sidebar, click on App templates. There, you can see a list of applications that can be installed on the server. Most of the app templates are downloaded from Linuxserver, which has stopped supporting the armhf architecture. You might have to install some applications manually by using later versions.
 
-Some of the applications i wanted to install were not in the app templates. So i installed them manually, by logging into the server using PUTTY and running the command from the documentaion page .
-Example of command for installing Navidrome(Music server application), heimdall(Dashboard) and jellyfin(Media server) From their dockerhub documentation. 
+So, I installed them manually by logging into the server using PuTTY and running the Docker command from the documentation page. For example, some of the commands for installing Navidrome (Music server application), Heimdall (Dashboard), and Jellyfin (Media server) can be found in their DockerHub documentation. Raspberry Pi, having armv7 architecture, is compatible.
+
 ```
 docker run -d \
 docker run \
@@ -145,7 +145,14 @@ docker run -d \
    -e ND_LOGLEVEL=info \
    deluan/navidrome:latest
 ```
+## Current Server Services
+
+- Navidrome: For serving music libary 
+- Jellyfin: For serving movies and tv shows
+- Heimdall: Dashboard for the server
+- Pi-Hole: A network-wide ad blocker that acts as a DNS sinkhole
+- Portainer : Open-source container management tool that allows users to easily manage and deploy containerized applications
 
 ## Todo
 
-- Upload the base iso of server 
+- Upload the base iso of server and provide a download link 
