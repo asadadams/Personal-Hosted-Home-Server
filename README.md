@@ -104,7 +104,7 @@ After installing portainer and logging in . We need to change some settings. We 
 - Click on the environment that has been created 
 - In the dropdown that opens on the sidebar, click on App templates. There, you can see a list of applications that can be installed on the server. Most of the app templates are downloaded from Linuxserver, which has stopped supporting the armhf architecture. You might have to install some applications manually by using later versions.
 
-So, I installed them manually by logging into the server using PuTTY and running the Docker command from the documentation page. For example, some of the commands for installing Navidrome (Music server application), Heimdall (Dashboard), and Jellyfin (Media server) can be found in their DockerHub documentation. Raspberry Pi, having armv7 architecture, is compatible.
+So, I installed them manually by logging into the server using PuTTY and running the Docker command from the documentation page. For example, some of the commands for installing Navidrome (Music server application), Heimdall (Dashboard), and Jellyfin (Media server) can be found in their DockerHub documentation. 
 
 ```
 docker run -d \
